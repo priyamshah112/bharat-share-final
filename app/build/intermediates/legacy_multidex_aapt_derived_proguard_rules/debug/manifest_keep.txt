@@ -1,0 +1,1 @@
+-keep class com.softglu.bharatshare.base.App { <init>(); }
