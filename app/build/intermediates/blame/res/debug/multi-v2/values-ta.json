@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Bharat Share\\Bharat Share\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ta\\values-ta.xml",
+            "outputFile": "D:\\bharat-share-final\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ta\\values-ta.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Priyam Shah\\.gradle\\caches\\transforms-2\\files-2.1\\10e28041f94ef1b753a4646ed38de0fe\\jetified-play-services-basement-17.0.0\\res\\values-ta\\values.xml",

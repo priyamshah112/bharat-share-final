@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Bharat Share\\Bharat Share\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rIN\\values-en-rIN.xml",
+            "outputFile": "D:\\bharat-share-final\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rIN\\values-en-rIN.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Priyam Shah\\.gradle\\caches\\transforms-2\\files-2.1\\f84ea27bfebd09e0379ffb6bb0461921\\appcompat-1.1.0\\res\\values-en-rIN\\values-en-rIN.xml",

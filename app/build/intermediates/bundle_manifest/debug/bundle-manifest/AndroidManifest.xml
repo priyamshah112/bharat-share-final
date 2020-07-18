@@ -129,11 +129,6 @@
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:theme="@style/Theme.TBShare.NoActionBar.StaticStatusBar" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.softglu.bharatshare.activity.FilePickerActivity"
@@ -183,6 +178,11 @@
             android:name="com.softglu.bharatshare.activity.SplashActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.TBShare.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <provider

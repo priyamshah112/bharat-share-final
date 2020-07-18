@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Bharat Share\\Bharat Share\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
+            "outputFile": "D:\\bharat-share-final\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Priyam Shah\\.gradle\\caches\\transforms-2\\files-2.1\\486ed3987d5c491d13befe15baa3fa2c\\material-1.2.0-alpha04\\res\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",

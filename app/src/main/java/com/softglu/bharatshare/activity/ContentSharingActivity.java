@@ -1,12 +1,14 @@
 package com.softglu.bharatshare.activity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -16,6 +18,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.ViewPager;
 
+import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
 import com.softglu.bharatshare.fragment.EditableListFragment;
 import com.softglu.bharatshare.view.EditableListFragmentImpl;
 import com.softglu.bharatshare.fragment.ApplicationListFragment;
@@ -31,8 +34,12 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.material.tabs.TabLayout;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static android.Manifest.permission.READ_PHONE_STATE;
 import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
+import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
 
 public class ContentSharingActivity extends Activity
 {
@@ -65,6 +72,7 @@ public class ContentSharingActivity extends Activity
                 .build();
         mAdMobAdView.loadAd(adRequest);
 
+
         mMode = findViewById(R.id.activity_content_sharing_action_mode);
         final TabLayout tabLayout = findViewById(R.id.activity_content_sharing_tab_layout);
         final ViewPager viewPager = findViewById(R.id.activity_content_sharing_view_pager);
@@ -88,6 +96,39 @@ public class ContentSharingActivity extends Activity
                     attachListeners(fragmentImpl);
             }
         };
+
+
+        //Send Floating Button Calls
+        ExtendedFloatingActionButton viewSend  = findViewById(R.id.viewSend);
+        viewSend.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+             Toast.makeText(ContentSharingActivity.this,"Send CLicked",Toast.LENGTH_SHORT).show();
+//                startActivity(new Intent(ContentSharingActivity.this, ShareActivity.class));
+            }
+        });
+
+        //Receive Floating Button Calls
+        ExtendedFloatingActionButton viewReceive  = findViewById(R.id.viewReceive);
+        viewReceive.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                Toast.makeText(ContentSharingActivity.this,"Receive CLicked",Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(ContentSharingActivity.this, ConnectionManagerActivity.class)
+                        .putExtra(ConnectionManagerActivity.EXTRA_ACTIVITY_SUBTITLE, getString(R.string.text_receive))
+                        .putExtra(ConnectionManagerActivity.EXTRA_REQUEST_TYPE, ConnectionManagerActivity.RequestType.MAKE_ACQUAINTANCE.toString()));
+            }
+        });
+
+        //History Floating Button Calls
+        ExtendedFloatingActionButton viewHistory  = findViewById(R.id.viewHistory);
+        viewHistory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                Toast.makeText(ContentSharingActivity.this,"History CLicked",Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(ContentSharingActivity.this, MainActivity.class));
+            }
+        });
 
         //mMode.setContainerLayout(findViewById(R.id.activity_content_sharing_action_mode_layout));
         Bundle fileExplorerArgs = new Bundle();
@@ -139,6 +180,7 @@ public class ContentSharingActivity extends Activity
             }
         });
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item)

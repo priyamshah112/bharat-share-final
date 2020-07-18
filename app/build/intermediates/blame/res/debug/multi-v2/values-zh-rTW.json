@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Bharat Share\\Bharat Share\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rTW\\values-zh-rTW.xml",
+            "outputFile": "D:\\bharat-share-final\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rTW\\values-zh-rTW.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Priyam Shah\\.gradle\\caches\\transforms-2\\files-2.1\\f94ebc76a7d773a805f60bb8988d93ad\\jetified-firebase-messaging-17.3.3\\res\\values-zh-rTW\\values.xml",

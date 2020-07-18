@@ -47,6 +47,8 @@
         tools:context="com.softglu.bharatshare.activity.ContentSharingActivity"
         tools:showIn="@layout/activity_content_sharing">
 
+
+
         <com.genonbeta.android.framework.widget.PowerfulActionMode
             android:id="@+id/activity_content_sharing_action_mode"
             android:layout_width="match_parent"
@@ -59,6 +61,52 @@
             android:layout_height="wrap_content"
             android:layout_above="@id/activity_content_sharing_action_mode"
             android:layout_alignParentTop="true">
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewHistory"
+                android:layout_gravity="left|bottom"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="5dp"
+                app:fabSize="normal"
+                app:elevation="6dp"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:text="History"
+                android:backgroundTint="@color/colorPrimary"
+                />
+
+
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewSend"
+                android:layout_gravity="end|right|bottom"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="16dp"
+                app:fabSize="normal"
+                app:elevation="6dp"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:text="Send"
+                android:backgroundTint="@color/colorPrimary"
+                />
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewReceive"
+                android:layout_gravity="end|right|bottom"
+                android:layout_marginRight="130dp"
+                android:layout_marginBottom="16dp"
+
+                app:fabSize="normal"
+                app:elevation="6dp"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:text="Receive"
+                android:backgroundTint="@color/colorPrimary"
+                />
 
             <androidx.viewpager.widget.ViewPager
                 android:id="@+id/activity_content_sharing_view_pager"

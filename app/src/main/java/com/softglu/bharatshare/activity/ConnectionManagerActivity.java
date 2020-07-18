@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -65,7 +66,7 @@ public class ConnectionManagerActivity
     private AppBarLayout mAppBarLayout;
     private CollapsingToolbarLayout mToolbarLayout;
     private ProgressBar mProgressBar;
-    private String mTitleProvided;
+    private static String mTitleProvided;
     private RequestType mRequestType = RequestType.RETURN_RESULT;
 
     private final NetworkDeviceSelectedListener mDeviceSelectionListener = new NetworkDeviceSelectedListener()
@@ -171,7 +172,6 @@ public class ConnectionManagerActivity
     protected void onCreate(@Nullable Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-
         setResult(RESULT_CANCELED);
         setContentView(R.layout.activity_connection_manager);
         AdView mAdMobAdView = (AdView) findViewById(R.id.admob_adview);
@@ -208,6 +208,7 @@ public class ConnectionManagerActivity
 
             if (getIntent().hasExtra(EXTRA_ACTIVITY_SUBTITLE))
                 mTitleProvided = getIntent().getStringExtra(EXTRA_ACTIVITY_SUBTITLE);
+
         }
     }
 
@@ -230,7 +231,7 @@ public class ConnectionManagerActivity
     public void onBackPressed()
     {
         if (getShowingFragment() instanceof OptionsFragment){
-            startActivity(new Intent(this, MainActivity.class));
+            startActivity(new Intent(this, ContentSharingActivity.class));
         finish(); }
            // super.onBackPressed();
         else{
@@ -244,7 +245,7 @@ public class ConnectionManagerActivity
         int id = item.getItemId();
 
         if (id == android.R.id.home){
-            startActivity(new Intent(this, MainActivity.class));
+            startActivity(new Intent(this, ContentSharingActivity.class));
         finish(); }
         else {
             return super.onOptionsItemSelected(item);
@@ -277,8 +278,9 @@ public class ConnectionManagerActivity
     {
         Fragment currentFragment = getShowingFragment();
 
-        if (currentFragment == null)
+        if (currentFragment == null) {
             setFragment(AvailableFragment.Options);
+        }
         else
             applyViewChanges(currentFragment, mTitleProvided);
     }
@@ -397,7 +399,18 @@ public class ConnectionManagerActivity
         @Override
         public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
         {
-            View view = inflater.inflate(R.layout.fragment_coptions, container, false);
+            View view;
+            System.out.println("Some progress for coptions");
+            System.out.println(mTitleProvided);
+            boolean flag = true;
+            if(mTitleProvided.equals("Receive")){
+                 view = inflater.inflate(R.layout.fragment_receive, container, false);
+                 flag = false;
+            }
+            else {
+                 view = inflater.inflate(R.layout.fragment_coptions, container, false);
+                 flag=true;
+            }
 
             View.OnClickListener listener = new View.OnClickListener()
             {
@@ -423,12 +436,18 @@ public class ConnectionManagerActivity
                 }
             };
 
-            view.findViewById(R.id.connection_option_devices).setOnClickListener(listener);
-            view.findViewById(R.id.connection_option_hotspot).setOnClickListener(listener);
-            view.findViewById(R.id.connection_option_network).setOnClickListener(listener);
-            view.findViewById(R.id.connection_option_scan).setOnClickListener(listener);
-            view.findViewById(R.id.connection_option_manual_ip).setOnClickListener(listener);
-
+            if(flag) {
+                view.findViewById(R.id.connection_option_devices).setOnClickListener(listener);
+                view.findViewById(R.id.connection_option_hotspot).setOnClickListener(listener);
+                view.findViewById(R.id.connection_option_network).setOnClickListener(listener);
+                view.findViewById(R.id.connection_option_scan).setOnClickListener(listener);
+                view.findViewById(R.id.connection_option_manual_ip).setOnClickListener(listener);
+            }
+            else{
+                view.findViewById(R.id.connection_option_devices).setOnClickListener(listener);
+                view.findViewById(R.id.connection_option_network).setOnClickListener(listener);
+                view.findViewById(R.id.connection_option_manual_ip).setOnClickListener(listener);
+            }
             view.findViewById(R.id.connection_option_guide).setOnClickListener(new View.OnClickListener()
             {
                 @Override

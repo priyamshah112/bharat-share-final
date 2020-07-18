@@ -289,6 +289,7 @@
     <string name="text_send">Send</string>
     <string name="butn_send" translatable="false">@string/text_send</string>
     <string name="text_connectionHelp">Choose an option to connect to the other device. For instance, if the other device is showing a QR code, use Scan QR code option.</string>
+    <string name="text_connectionHelp_receive">Choose an option to connect to the other device. For instance, use My QR code option so that other user can Scan your QR code or Scan for available devices.</string>
     <string name="ques_needHelp">Need a helping hand?</string>
     <string name="text_connectionWizard">Connection wizard</string>
     <string name="ques_connectionWizardIsOtherDeviceReady">Have you just set things up on the other device?</string>
