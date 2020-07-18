@@ -103,8 +103,7 @@ public class ContentSharingActivity extends Activity
         viewSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-             Toast.makeText(ContentSharingActivity.this,"Send CLicked",Toast.LENGTH_SHORT).show();
-//                startActivity(new Intent(ContentSharingActivity.this, ShareActivity.class));
+                findViewById(R.id.action_mode_share_TBShare).performClick();
             }
         });
 

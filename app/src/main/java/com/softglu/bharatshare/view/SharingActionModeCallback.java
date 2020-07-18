@@ -37,13 +37,21 @@ public class SharingActionModeCallback<T extends Shareable> extends EditableList
     {
         super.onCreateActionMenu(context, actionMode, menu);
         actionMode.getMenuInflater().inflate(R.menu.action_mode_share, menu);
+        System.out.println("Action menu created calling menu");
+
+        //onActionMenuItemSelected(context, actionMode, menu.getItem(R.id.action_mode_share_TBShare));
+        //System.out.println(menu.getItem(R.id.action_mode_share_TBShare));
         return true;
     }
+
 
     @Override
     public boolean onActionMenuItemSelected(Context context, PowerfulActionMode actionMode, MenuItem item)
     {
+        System.out.println("In Action Menu Item");
+        System.out.println(item);
         int id = item.getItemId();
+        System.out.println(id);
 
         List<T> selectedItemList = new ArrayList<>(getFragment().getSelectionConnection().getSelectedItemList());
 
