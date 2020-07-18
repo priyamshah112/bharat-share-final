@@ -73,6 +73,7 @@
                 app:elevation="6dp"
                 style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
                 android:text="History"
+                android:textColor="#FFFFFF"
                 android:backgroundTint="@color/colorPrimary"
                 />
 
@@ -90,6 +91,7 @@
                 app:elevation="6dp"
                 style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
                 android:text="Send"
+                android:textColor="#FFFFFF"
                 android:backgroundTint="@color/colorPrimary"
                 />
 
@@ -105,6 +107,7 @@
                 app:elevation="6dp"
                 style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
                 android:text="Receive"
+                android:textColor="#FFFFFF"
                 android:backgroundTint="@color/colorPrimary"
                 />
 

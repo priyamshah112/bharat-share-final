@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import com.softglu.bharatshare.fragment.EditableListFragment;
@@ -37,8 +38,8 @@ public class SharingActionModeCallback<T extends Shareable> extends EditableList
     {
         super.onCreateActionMenu(context, actionMode, menu);
         actionMode.getMenuInflater().inflate(R.menu.action_mode_share, menu);
+        actionMode.setVisibility(View.GONE);
         System.out.println("Action menu created calling menu");
-
         //onActionMenuItemSelected(context, actionMode, menu.getItem(R.id.action_mode_share_TBShare));
         //System.out.println(menu.getItem(R.id.action_mode_share_TBShare));
         return true;

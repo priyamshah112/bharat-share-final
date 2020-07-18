@@ -80,6 +80,7 @@ public class ContentSharingActivity extends Activity
         mSelectionCallback = new SharingActionModeCallback(null);
         final PowerfulActionMode.SelectorConnection selectorConnection = new PowerfulActionMode.SelectorConnection(mMode, mSelectionCallback);
 
+
         final SmartFragmentPagerAdapter pagerAdapter = new SmartFragmentPagerAdapter(this, getSupportFragmentManager())
         {
             @Override

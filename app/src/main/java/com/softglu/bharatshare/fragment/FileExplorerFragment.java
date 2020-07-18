@@ -77,8 +77,8 @@ public class FileExplorerFragment
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false);
         layoutManager.setStackFromEnd(true);
 
-        mPathView.setLayoutManager(layoutManager);
-        mPathView.setHasFixedSize(true);
+        //mPathView.setLayoutManager(layoutManager);
+        //mPathView.setHasFixedSize(true);
         mPathView.setAdapter(mPathAdapter);
 
         return super.onListView(mainContainer, (ViewGroup) adaptedView.findViewById(R.id.fragment_fileexplorer_listViewContainer));
