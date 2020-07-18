@@ -2825,6 +2825,7 @@ layout fragment_manager
 layout fragment_network_manager
 layout fragment_qrconnect
 layout fragment_receive
+layout fragment_send
 layout fragment_transfer_explorer
 layout genfw_abstract_list_fragment
 layout genfw_fastscroll_default_bubble
@@ -3311,6 +3312,7 @@ string text_communicationServiceStop
 string text_connectDevices
 string text_connectionHelp
 string text_connectionHelp_receive
+string text_connectionHelp_send
 string text_connectionPermission
 string text_connectionTest
 string text_connectionWizard

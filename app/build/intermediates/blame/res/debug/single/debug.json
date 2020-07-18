@@ -136,12 +136,12 @@
         "source": "D:\\bharat-share-final\\app\\src\\main\\res\\drawable\\round_progress_bar_shape_dark.xml"
     },
     {
-        "merged": "D:\\bharat-share-final\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_wifi_white_24dp.xml.flat",
-        "source": "D:\\bharat-share-final\\app\\src\\main\\res\\drawable\\ic_wifi_white_24dp.xml"
-    },
-    {
         "merged": "D:\\bharat-share-final\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_keyboard_arrow_right_white_24dp.xml.flat",
         "source": "D:\\bharat-share-final\\app\\src\\main\\res\\drawable\\ic_keyboard_arrow_right_white_24dp.xml"
+    },
+    {
+        "merged": "D:\\bharat-share-final\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_wifi_white_24dp.xml.flat",
+        "source": "D:\\bharat-share-final\\app\\src\\main\\res\\drawable\\ic_wifi_white_24dp.xml"
     },
     {
         "merged": "D:\\bharat-share-final\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_qrconnect.xml.flat",
@@ -164,12 +164,12 @@
         "source": "D:\\bharat-share-final\\app\\src\\main\\res\\drawable\\ic_file_powerpoint_box_24dp.xml"
     },
     {
-        "merged": "D:\\bharat-share-final\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_devices_white_24dp.xml.flat",
-        "source": "D:\\bharat-share-final\\app\\src\\main\\res\\drawable\\ic_devices_white_24dp.xml"
-    },
-    {
         "merged": "D:\\bharat-share-final\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_file_explorer.xml.flat",
         "source": "D:\\bharat-share-final\\app\\src\\main\\res\\layout\\fragment_file_explorer.xml"
+    },
+    {
+        "merged": "D:\\bharat-share-final\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_devices_white_24dp.xml.flat",
+        "source": "D:\\bharat-share-final\\app\\src\\main\\res\\drawable\\ic_devices_white_24dp.xml"
     },
     {
         "merged": "D:\\bharat-share-final\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_web_white2_24dp.xml.flat",
@@ -366,6 +366,10 @@
     {
         "merged": "D:\\bharat-share-final\\app\\build\\intermediates\\res\\merged\\debug\\layout_row_music.xml.flat",
         "source": "D:\\bharat-share-final\\app\\src\\main\\res\\layout\\row_music.xml"
+    },
+    {
+        "merged": "D:\\bharat-share-final\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_send.xml.flat",
+        "source": "D:\\bharat-share-final\\app\\src\\main\\res\\layout\\fragment_send.xml"
     },
     {
         "merged": "D:\\bharat-share-final\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_close_white_24dp_static.png.flat",

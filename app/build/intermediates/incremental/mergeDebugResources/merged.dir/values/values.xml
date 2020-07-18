@@ -1546,6 +1546,7 @@
     <string name="text_connectDevices">Connect devices</string>
     <string name="text_connectionHelp">Choose an option to connect to the other device. For instance, if the other device is showing a QR code, use Scan QR code option.</string>
     <string name="text_connectionHelp_receive">Choose an option to connect to the other device. For instance, use My QR code option so that other user can Scan your QR code or Scan for available devices.</string>
+    <string name="text_connectionHelp_send">Choose an option to connect to the other device. For instance, if the other device is showing a QR code, use Scan QR code option Or Setup hotspot for other device to connect.</string>
     <string name="text_connectionPermission">Connection permission</string>
     <string name="text_connectionTest">Connection test - %s</string>
     <string name="text_connectionWizard">Connection wizard</string>

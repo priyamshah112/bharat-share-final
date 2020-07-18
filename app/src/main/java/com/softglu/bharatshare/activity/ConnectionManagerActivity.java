@@ -408,7 +408,7 @@ public class ConnectionManagerActivity
                  flag = false;
             }
             else {
-                 view = inflater.inflate(R.layout.fragment_coptions, container, false);
+                 view = inflater.inflate(R.layout.fragment_send, container, false);
                  flag=true;
             }
 
@@ -439,7 +439,6 @@ public class ConnectionManagerActivity
             if(flag) {
                 view.findViewById(R.id.connection_option_devices).setOnClickListener(listener);
                 view.findViewById(R.id.connection_option_hotspot).setOnClickListener(listener);
-                view.findViewById(R.id.connection_option_network).setOnClickListener(listener);
                 view.findViewById(R.id.connection_option_scan).setOnClickListener(listener);
                 view.findViewById(R.id.connection_option_manual_ip).setOnClickListener(listener);
             }
